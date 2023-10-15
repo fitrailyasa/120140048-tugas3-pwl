@@ -30,11 +30,8 @@ npm start
 npm test
 ```
 
-##### Hasil Test
+### Hasil Test
 
-```
-
-```
 
 ![test result](./src/assets/hasil-test.png)
 
