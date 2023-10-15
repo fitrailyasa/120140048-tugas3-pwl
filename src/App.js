@@ -6,6 +6,8 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
 import Kontak from './pages/Kontak';
+import Header from './component/Header';
+import Footer from './component/Footer';
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -23,24 +25,11 @@ function App() {
     <div className={` ${darkMode ? 'dark-mode' : ''}`}>
       <Router>
 
-        <header>
-          <nav className={`px-3 navbar navbar-expand-lg navbar-primary ${darkMode ? 'bg-dark' : 'bg-primary'}`}>
-            <ul className="navbar-nav">
-              <li className="nav-item">
-                <a className={`nav-link text-${darkMode ? 'white' : 'white'}`} href="/">Beranda</a>
-              </li>
-              <li className="nav-item">
-                <a className={`nav-link text-${darkMode ? 'white' : 'white'}`} href="/tentang">Tentang</a>
-              </li>
-              <li className="nav-item">
-                <a className={`nav-link text-${darkMode ? 'white' : 'white'}`} href="/kontak">Kontak</a>
-              </li>
-              <li className="nav-item">
-                <button onClick={() => setDarkMode(!darkMode)} className={`nav-link btn bg-${darkMode ? 'white' : 'dark'} text-${darkMode ? 'black' : 'white'}`} >{darkMode ? 'Light Mode' : 'Dark Mode'}</button>
-              </li>
-            </ul>
-          </nav>
-        </header>
+        <Header>
+          <li className="nav-item">
+            <button onClick={() => setDarkMode(!darkMode)} className={`nav-link btn bg-${darkMode ? 'white' : 'dark'} text-${darkMode ? 'black' : 'white'}`} >{darkMode ? 'Light Mode' : 'Dark Mode'}</button>
+          </li>
+        </Header>
         <div>
           <Routes>
             <Route path="/" element={<Home />} />
@@ -48,9 +37,7 @@ function App() {
             <Route path="/kontak" element={<Kontak />} />
           </Routes>
         </div>
-        <footer className={`bg-${darkMode ? 'dark' : 'primary'}`}>
-          <p className={`p-2 text-center text-${darkMode ? 'white' : 'white'}`}>Hak Cipta &copy; 2023 || 120140048 - Fitra Ilyasa</p>
-        </footer>
+        <Footer />
       </Router>
     </div>
   );

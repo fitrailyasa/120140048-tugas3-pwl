@@ -1,6 +1,7 @@
 // Tugas Individu 3 - Pemrograman Web Lanjut
 // 120140048 - Fitra Ilyasa
 import React, { useState } from 'react';
+import Button from '../component/Button';
 
 function Kontak() {
     const [name, setName] = useState('');
@@ -68,9 +69,7 @@ function Kontak() {
                             onChange={handleInputChange}
                         />
                     </div>
-                    <button type="submit" className="mb-4 btn btn-primary">
-                        Kirim Pesan
-                    </button>
+                    <Button />
                 </form>
 
                 {/* Menampilkan pesan yang telah dikirim */}
