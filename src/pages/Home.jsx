@@ -1,11 +1,12 @@
 // Tugas Individu 3 - Pemrograman Web Lanjut
 // 120140048 - Fitra Ilyasa
 import React from 'react';
+import TitleHeading from '../component/TitleHeading';
 
 function Home() {
     return (
         <div className="container">
-            <h1>Beranda</h1>
+            <TitleHeading text="Beranda" />
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat animi aliquam adipisci quae itaque enim quo,
                 dignissimos, veniam ipsa distinctio, error harum nostrum deleniti laborum rerum sit similique doloribus
                 necessitatibus. Incidunt error ducimus dolores architecto cupiditate fugit dignissimos sequi praesentium

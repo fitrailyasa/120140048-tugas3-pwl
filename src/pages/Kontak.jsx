@@ -1,6 +1,7 @@
 // Tugas Individu 3 - Pemrograman Web Lanjut
 // 120140048 - Fitra Ilyasa
 import React, { useState } from 'react';
+import TitleHeading from '../component/TitleHeading';
 import Button from '../component/Button';
 
 function Kontak() {
@@ -38,7 +39,7 @@ function Kontak() {
     return (
         <div className="container">
             <div className="">
-                <h1>Kontak</h1>
+                <TitleHeading text="Kontak" />
                 <form onSubmit={handleSubmit}>
                     <div className="my-4 form-group">
                         <label>Nama:</label>

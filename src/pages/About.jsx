@@ -1,11 +1,12 @@
 // Tugas Individu 3 - Pemrograman Web Lanjut
 // 120140048 - Fitra Ilyasa
 import React from 'react';
+import TitleHeading from '../component/TitleHeading';
 
 function About() {
     return (
         <div className="container">
-            <h1>Tentang</h1>
+            <TitleHeading text="Tentang" />
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam porro illum tenetur facilis obcaecati excepturi
                 officia enim, fugit qui cupiditate nesciunt doloribus debitis ea cum rem beatae quis soluta aspernatur veritatis
                 optio dignissimos corrupti? Impedit, laborum doloribus? Aperiam ipsum animi eaque dolor quis aspernatur officiis
