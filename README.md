@@ -36,7 +36,7 @@ npm test
 
 ```
 
-![test result](./src/assets/hasil.png)
+![test result](./src/assets/hasil-test.png)
 
 ## Author
 
